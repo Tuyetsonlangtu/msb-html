@@ -939,6 +939,9 @@ h2.small-title {
   text-align: center;
   line-height: 1.1;
   top: 40px; }
+  @media (max-width: 1300px) {
+    .signUp-container {
+      right: -30px; } }
   .signUp-container a {
     font-size: 11px;
     font-weight: bold;
@@ -964,6 +967,9 @@ h2.small-title {
   @media (max-width: 991px) {
     .gototop-container {
       display: none; } }
+  @media (max-width: 1300px) {
+    .gototop-container {
+      right: -30px; } }
   .gototop-container a {
     font-size: 11px;
     font-weight: bold;
