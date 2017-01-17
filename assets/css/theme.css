@@ -417,6 +417,9 @@ h2.small-title {
 .border-radius-0 {
   border-radius: 0 !important; }
 
+.text-underline {
+  text-decoration: underline !important; }
+
 .top-header {
   height: 39px;
   line-height: 39px; }
@@ -1422,5 +1425,64 @@ h2.small-title {
     background: #f6f9fe;
     padding-top: 40px;
     padding-bottom: 40px; } }
+
+@media (min-width: 768px) {
+  .form-register-member {
+    background: #f6f9fe;
+    position: relative;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 40px;
+    padding-bottom: 40p; } }
+.form-register-member .breakline-vertical {
+  width: 1px;
+  background: #d3d3d3;
+  position: absolute;
+  top: 40px;
+  bottom: 40px;
+  margin: 0 auto;
+  left: 269px;
+  right: 0; }
+
+.btn-facebook {
+  background: #476198;
+  color: #fff;
+  font-weight: 600; }
+  .btn-facebook img {
+    float: right; }
+
+.btn-google-plus {
+  background: #de4839;
+  font-weight: 600;
+  color: #fff; }
+  .btn-google-plus img {
+    float: right; }
+
+@media (min-width: 768px) {
+  .choose-your-favorite-item {
+    background: #f6f9fe;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    padding-left: 100px;
+    padding-right: 100px; } }
+.choose-your-favorite-item .row-favorite {
+  display: flex;
+  margin-bottom: 10px; }
+  @media (max-width: 767px) {
+    .choose-your-favorite-item .row-favorite {
+      display: block; } }
+  @media (min-width: 768px) {
+    .choose-your-favorite-item .row-favorite .favorite-item {
+      width: 20%; } }
+  @media (max-width: 991px) {
+    .choose-your-favorite-item .row-favorite .favorite-item {
+      width: 49%;
+      display: inline-block; } }
+  .choose-your-favorite-item .row-favorite img {
+    margin-bottom: 14px;
+    display: block; }
+  .choose-your-favorite-item .row-favorite .custom-control-description {
+    font-weight: 600;
+    margin-left: 5px; }
 
 /*# sourceMappingURL=theme.css.map */
