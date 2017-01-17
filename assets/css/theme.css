@@ -1387,4 +1387,34 @@ h2.small-title {
     border: 0;
     padding: 10px 40px 30px 40px; }
 
+@media (min-width: 768px) {
+  .contact-block {
+    padding-left: 40px;
+    padding-right: 40px; } }
+@media (min-width: 768px) {
+  .contact-block .form-contact {
+    position: relative;
+    background: #f6f9fe;
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px; } }
+.contact-block .form-contact textarea {
+  resize: none; }
+.contact-block .form-contact .breakline-vertical {
+  width: 1px;
+  background: #d3d3d3;
+  position: absolute;
+  top: 40px;
+  bottom: 40px;
+  margin: 0 auto;
+  left: 0;
+  right: 0; }
+.contact-block .hotline-content {
+  font-size: 20px;
+  color: #f20000;
+  font-weight: 600; }
+.contact-block .hotline-title {
+  font-size: 16px; }
+
 /*# sourceMappingURL=theme.css.map */
