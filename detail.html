@@ -2,32 +2,28 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> | Msbjoybank</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> | Msbjoybank</title>
 
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
-  <!-- Custom styles for this template -->
-  <link href="assets/css/sticky.min.css" rel="stylesheet" /> 
-  <link href="assets/css/theme.css" rel="stylesheet"> 
-  
-  
-  
-  <link href="assets/css/owl.carousel.css" rel="stylesheet" /> 
-  
+    <!-- Custom styles for this template -->
+    <link href="assets/css/sticky.min.css" rel="stylesheet" />
+    <link href="assets/css/theme.css" rel="stylesheet">  
+    <link href="assets/css/owl.carousel.css" rel="stylesheet" /> 
 
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
 
 <body>
-  
+    
 <div class="top-header">
     <div class="container-fluid">
         <div class="row">
@@ -229,9 +225,9 @@
         </div>
     </div>
 </div>
-  
-  <div class="container" role="main" style="position: relative;">
-    
+
+    <div class="container" role="main" style="position: relative;">
+        
 
 <div class="signUp-container ui sticky">
     <div class="">
@@ -240,8 +236,7 @@
             Đăng ký thành viên
         </a>
     </div>
-</div>
-    
+</div> 
 
 <div class="breadcrum">
     <div class="row">
@@ -958,8 +953,7 @@ Khuyến mại không được áp dụng khi Chủ Thẻ chọn chức năng �
       </div>
     </div>
   </div>
-</div>
-    
+</div> 
 <div class="gototop-container">
     <div class="">
         <a href="javascript:gototop()">
@@ -968,8 +962,8 @@ Khuyến mại không được áp dụng khi Chủ Thẻ chọn chức năng �
         </a>
     </div>
 </div>
-  </div>
-  
+    </div>
+    
 <div class="subscription-container">
     <div class="subscription">
         <div class="container">
@@ -998,8 +992,7 @@ Khuyến mại không được áp dụng khi Chủ Thẻ chọn chức năng �
             </div>
         </div>
     </div>
-</div>
-  
+</div> 
 <div class="container footerComponent">
     <div class="row">
         <div class="col-md-12">
@@ -1130,57 +1123,55 @@ Khuyến mại không được áp dụng khi Chủ Thẻ chọn chức năng �
         </div>
     </div>
 </div>
-  
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/tether.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="assets/js/bootstrap.js"></script>
-  <script src="assets/js/bootstrap-select.js"></script>
-  <script src="assets/js/sticky.min.js"></script>
-  <script src="assets/js/jquery.matchheight.min.js"></script>
-  <script src="assets/js/main.js"></script>
 
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/tether.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/bootstrap-select.js"></script>
+    <script src="assets/js/sticky.min.js"></script>
+    <script src="assets/js/jquery.matchheight.min.js"></script>
+    <script src="assets/js/main.js"></script>
+     
+    <script src="assets/js/rating.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            //http://irfandurmus.com/projects/jquery-star-rating-plugin/
+            //https://github.com/irfan/jquery-star-rating
+            $('.form-evaluation-star').rating();
 
-  <script src="assets/js/rating.js"></script>
-  <script src="assets/js/owl.carousel.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      //http://irfandurmus.com/projects/jquery-star-rating-plugin/
-      //https://github.com/irfan/jquery-star-rating
-      $('.form-evaluation-star').rating();
+            //carousel thumbnail
+            var carousel = $('.owl-carousel-container');
+            carousel.owlCarousel({
+                itemsCustom: [
+                    [0, 2],
+                    [450, 2],
+                    [600, 3],
+                    [700, 4],
+                    [1000, 5],
+                    [1200, 6],
+                    [1400, 6],
+                    [1600, 6]
+                ],
+                //navigation: true,
+                afterInit: function(el) {
 
-      //carousel thumbnail
-      var carousel= $('.owl-carousel-container');
-       carousel.owlCarousel({
-          itemsCustom: [
-            [0, 2],
-            [450, 2],
-            [600, 3],
-            [700, 4],
-            [1000, 5],
-            [1200, 6],
-            [1400, 6],
-            [1600, 6]
-          ],
-          //navigation: true,
-          afterInit: function (el) {
-            
-          }
-        });
-        $('.slide-thumbnail').find('.prev').click(function(){
-           carousel.trigger('owl.prev');
-        });
-        $('.slide-thumbnail').find('.next').click(function(){
-           carousel.trigger('owl.next');
-        });
+                }
+            });
+            $('.slide-thumbnail').find('.prev').click(function() {
+                carousel.trigger('owl.prev');
+            });
+            $('.slide-thumbnail').find('.next').click(function() {
+                carousel.trigger('owl.next');
+            });
 
-        var productList = $('.product-content');
-        equalHeight(productList);
-    })
-  </script>
-
-
+            var productList = $('.product-content');
+            equalHeight(productList);
+        })
+    </script>
+      
 </body>
 
 </html>

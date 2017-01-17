@@ -2,32 +2,28 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home | Msbjoybank</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | Msbjoybank</title>
 
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
-  <!-- Custom styles for this template -->
-  <link href="assets/css/sticky.min.css" rel="stylesheet" /> 
-  <link href="assets/css/theme.css" rel="stylesheet"> 
-  
-  
-  <link href="assets/css/owl.carousel.css" rel="stylesheet" /> 
-  
-  
+    <!-- Custom styles for this template -->
+    <link href="assets/css/sticky.min.css" rel="stylesheet" />
+    <link href="assets/css/theme.css" rel="stylesheet"> 
+    <link href="assets/css/owl.carousel.css" rel="stylesheet" />  
 
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
 
 <body>
-  
+    
 <div class="top-header">
     <div class="container-fluid">
         <div class="row">
@@ -229,9 +225,9 @@
         </div>
     </div>
 </div>
-  
-  <div class="container" role="main" style="position: relative;">
-    
+
+    <div class="container" role="main" style="position: relative;">
+        
 
 <div class="signUp-container ui sticky">
     <div class="">
@@ -240,8 +236,7 @@
             Đăng ký thành viên
         </a>
     </div>
-</div>
-    
+</div> 
 <div class="row">
   <div class="col-md-12">
     <div class="home-page-banner owl-carousel-banner-container">
@@ -859,8 +854,7 @@
       </div>
     </div>
   </div>
-</div>
-    
+</div> 
 <div class="gototop-container">
     <div class="">
         <a href="javascript:gototop()">
@@ -869,8 +863,8 @@
         </a>
     </div>
 </div>
-  </div>
-  
+    </div>
+    
 <div class="subscription-container">
     <div class="subscription">
         <div class="container">
@@ -899,8 +893,7 @@
             </div>
         </div>
     </div>
-</div>
-  
+</div> 
 <div class="container footerComponent">
     <div class="row">
         <div class="col-md-12">
@@ -1031,70 +1024,68 @@
         </div>
     </div>
 </div>
-  
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/tether.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="assets/js/bootstrap.js"></script>
-  <script src="assets/js/bootstrap-select.js"></script>
-  <script src="assets/js/sticky.min.js"></script>
-  <script src="assets/js/jquery.matchheight.min.js"></script>
-  <script src="assets/js/main.js"></script>
 
-  <script src="assets/js/owl.carousel.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      var owl = $(".slide-carousel");
-      owl.each(function () {
-        var carousel= $(this).find('.owl-carousel-container');
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/tether.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/bootstrap-select.js"></script>
+    <script src="assets/js/sticky.min.js"></script>
+    <script src="assets/js/jquery.matchheight.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var owl = $(".slide-carousel");
+            owl.each(function() {
+                var carousel = $(this).find('.owl-carousel-container');
 
-        carousel.owlCarousel({
-          itemsCustom: [
-            [0, 1],
-            [450, 1],
-            [600, 1],
-            [700, 2],
-            [1000, 3],
-            [1200, 3],
-            [1400, 3],
-            [1600, 3]
-          ],
-          //navigation: true,
-          afterInit: function (el) {
-            
-          }
-        });
+                carousel.owlCarousel({
+                    itemsCustom: [
+                        [0, 1],
+                        [450, 1],
+                        [600, 1],
+                        [700, 2],
+                        [1000, 3],
+                        [1200, 3],
+                        [1400, 3],
+                        [1600, 3]
+                    ],
+                    //navigation: true,
+                    afterInit: function(el) {
 
-        var next = $(this).find('.next');
-        var prev = $(this).find('.prev'); 
-        next.click(function(){
-          carousel.trigger('owl.next');
+                    }
+                });
+
+                var next = $(this).find('.next');
+                var prev = $(this).find('.prev');
+                next.click(function() {
+                    carousel.trigger('owl.next');
+                })
+                prev.click(function() {
+                    carousel.trigger('owl.prev');
+                })
+            })
+
+            //banner carousel
+            var bannerHomeCarousel = $('.owl-carousel-banner-container .owl-carousel');
+            bannerHomeCarousel.owlCarousel({
+                singleItem: true,
+                //navigation: true,
+                afterInit: function(el) {}
+            });
+
+            $('.owlTobanner.prev').click(function() {
+                bannerHomeCarousel.trigger('owl.prev');
+            });
+            $('.owlTobanner.next').click(function() {
+                bannerHomeCarousel.trigger('owl.next');
+            })
         })
-        prev.click(function(){
-          carousel.trigger('owl.prev');
-        })
-      })
-
-      //banner carousel
-      var bannerHomeCarousel = $('.owl-carousel-banner-container .owl-carousel');
-        bannerHomeCarousel.owlCarousel({
-          singleItem:true,
-          //navigation: true,
-          afterInit: function (el) {}
-          });
-
-          $('.owlTobanner.prev').click(function(){
-            bannerHomeCarousel.trigger('owl.prev');
-          });
-          $('.owlTobanner.next').click(function(){
-            bannerHomeCarousel.trigger('owl.next');
-          })
-    })
-  </script>
-
-
-
+    </script>
+       
 </body>
 
 </html>

@@ -414,6 +414,9 @@ h2.small-title {
     display: block;
     outline: none; }
 
+.border-radius-0 {
+  border-radius: 0 !important; }
+
 .top-header {
   height: 39px;
   line-height: 39px; }
@@ -1358,5 +1361,30 @@ h2.small-title {
 
 .slider-handle.triangle {
   background: transparent none; }
+
+@media (min-width: 768px) {
+  .forget-password-block {
+    padding-left: 45px;
+    padding-right: 45px; } }
+.forget-password-block .rspassword-tooltip {
+  font-size: 16px;
+  color: #000; }
+@media (min-width: 768px) {
+  .forget-password-block .form-reset {
+    background: #f6f9fe;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 35px;
+    padding-bottom: 35px; } }
+
+.commonDialog {
+  margin-top: 100px; }
+  .commonDialog .modal-dialog {
+    max-width: 400px; }
+  .commonDialog .modal-body {
+    padding: 30px 40px 0 30px; }
+  .commonDialog .modal-footer {
+    border: 0;
+    padding: 10px 40px 30px 40px; }
 
 /*# sourceMappingURL=theme.css.map */

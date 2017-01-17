@@ -1,3 +1,17 @@
+var tplModal = function(modalContent, modalOkText) {
+    return '<div class="commonDialog modal fade text-xs-center">\
+                <div class="modal-dialog" role="document">\
+                    <div class="modal-content">\
+                        <div class="modal-body">\
+                            <p class="text-xs-center">' + modalContent + '</p>\
+                        </div>\
+                        <div class="modal-footer text-xs-center">\
+                            <button type="button" class="btn btn-primary">' + modalOkText + '</button>\
+                        </div>\
+                    </div>\
+                </div>\
+            </div>';
+}
 $(function() {
     $('.navigation-conponent .list-inline-item').hover(function() {
         $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
@@ -43,6 +57,14 @@ function addCommas(nStr) {
         x1 = x1.replace(rgx, '$1' + ',' + '$2');
     }
     return x1 + x2;
+}
+
+function showModal(modalContent, modalOkText) {
+    $('body').append(tplModal(modalContent, modalOkText));
+    $('.commonDialog').modal('show');
+    $('.commonDialog').on('hidden.bs.modal', function() {
+        $('.commonDialog').remove();
+    })
 }
 
 var leftGotoTop = 0;
