@@ -1433,7 +1433,7 @@ h2.small-title {
     padding-left: 60px;
     padding-right: 60px;
     padding-top: 40px;
-    padding-bottom: 40p; } }
+    padding-bottom: 40px; } }
 .form-register-member .breakline-vertical {
   width: 1px;
   background: #d3d3d3;
@@ -1443,6 +1443,8 @@ h2.small-title {
   margin: 0 auto;
   left: 269px;
   right: 0; }
+.form-register-member.login .breakline-vertical {
+  left: 0; }
 
 .btn-facebook {
   background: #476198;
