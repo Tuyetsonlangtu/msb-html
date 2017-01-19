@@ -1,7 +1,9 @@
 $(function() {
-    $('.header-on-mobile').sticky({
-        offset: 0,
-    });
+    if ($(window).width < 990) {
+        $('.header-on-mobile').sticky({
+            offset: 0,
+        });
+    }
 });
 
 //toggle menu on mobile
