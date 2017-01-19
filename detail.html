@@ -11,7 +11,9 @@
 
     <!-- Custom styles for this template -->
     <link href="assets/css/sticky.min.css" rel="stylesheet" />
-    <link href="assets/css/theme.css" rel="stylesheet">  
+    <link href="assets/css/theme.css" rel="stylesheet">
+    <link href="assets/css/mobile.css" rel="stylesheet">
+      
     <link href="assets/css/owl.carousel.css" rel="stylesheet" /> 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -24,7 +26,7 @@
 
 <body>
     
-<div class="top-header">
+<div class="top-header hidden-md-down">
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-12 col-md-6">
@@ -46,7 +48,223 @@
         </div>
     </div>
 </div> 
-<div class="header">
+    
+<div class="header-on-mobile ui sticky  mm-slideout">
+    <div class="container-fluid mb-relative">
+        <div class="row">
+            <div class="col-xs-12">
+                <a href="javascript:;" onclick="toggleMenuMobile()" class="hamburger-menu">
+                </a>
+                <a href="#" class="main-mobile-logo">
+                    <img src="assets/images/logo-mobile.png" alt="">
+                </a>
+                <a href="javascript:;" data-toggle="collapse" data-target="#mobile-search" class="search-icon collapsed"></a>
+                <div id="mobile-search" class="collapse">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <select class="selectpicker" data-style="btn-secondary sl-custom-theme" data-width="100%">
+                                    <option value="1">Khám phá cuộc sống</option>
+                                    <option value="2">Tận hưởng cuộc sống</option>
+                                    <option value="3">An tâm vui sống</option>
+                                    <option value="4">Nâng tầm cuộc sống</option>
+                                    <option value="5">Đầu tư tương lai</option>
+                                </select>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control txt-search-on-mobile" placeholder="Tìm ưu đãi tốt nhất..." name="" value="">
+                                </div>
+                                <div class="form-group">
+                                    <button type="button" class="btn btn-primary font-weight-bold btn-block">
+                                   <img src="assets/images/icon_magnifier-white.png" alt=""> TÌM KIẾM
+                                </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="navigation-mobile">
+    <div class="navigation-mb-content">
+        <ul class="list-inline">
+            <li class="list-inline-item alink-login">
+                <img src="assets/images/icon-login-user-mobile.png" alt="">
+                <a href="#">ĐĂNG NHẬP</a>
+            </li>
+            <li class="list-inline-item alink-register">
+                <a href="#">ĐĂNG KÝ</a>
+            </li>
+        </ul>
+        <hr>
+        <ul class="list-unstyled" id="accordionMenuMobile" role="tablist" aria-multiselectable="true">
+            <li class="accordion-panel card">
+                <a class="collapsed single-item" href="#">Trang chủ</a>
+            </li>
+            
+            <li class="accordion-panel card">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordionMenuMobile" href="#menu-item-1" aria-controls="menu-item-1">
+                    khám phá cuộc sống
+                </a>
+                <div id="menu-item-1" class="panel-collapse collapse sub-menu" role="tabpanel" aria-labelledby="menu-item-1">
+                    <ul class="list-unstyled">
+                        
+                        <li>
+                            <a href="#">Du lịch</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">giải trí</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">khoa học</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </li>
+            
+            <li class="accordion-panel card">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordionMenuMobile" href="#menu-item-2" aria-controls="menu-item-2">
+                    Tận hưởng cuộc sống
+                </a>
+                <div id="menu-item-2" class="panel-collapse collapse sub-menu" role="tabpanel" aria-labelledby="menu-item-2">
+                    <ul class="list-unstyled">
+                        
+                        <li>
+                            <a href="#">mua sắm</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">ăn uống</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">giải trí</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">Chăm sóc sức khỏe</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </li>
+            
+            <li class="accordion-panel card">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordionMenuMobile" href="#menu-item-3" aria-controls="menu-item-3">
+                    an tâm vui sống
+                </a>
+                <div id="menu-item-3" class="panel-collapse collapse sub-menu" role="tabpanel" aria-labelledby="menu-item-3">
+                    <ul class="list-unstyled">
+                        
+                        <li>
+                            <a href="#">mua sắm</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">ăn uống</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">bảo hiểm</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </li>
+            
+            <li class="accordion-panel card">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordionMenuMobile" href="#menu-item-4" aria-controls="menu-item-4">
+                    nâng tầm cuộc sống
+                </a>
+                <div id="menu-item-4" class="panel-collapse collapse sub-menu" role="tabpanel" aria-labelledby="menu-item-4">
+                    <ul class="list-unstyled">
+                        
+                        <li>
+                            <a href="#">Cho vay</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">vay tiêu dùng</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">giải trí</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">chăm sóc sức khỏe</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">mua sắm</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </li>
+            
+            <li class="accordion-panel card">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordionMenuMobile" href="#menu-item-5" aria-controls="menu-item-5">
+                    đầu tư tương lai
+                </a>
+                <div id="menu-item-5" class="panel-collapse collapse sub-menu" role="tabpanel" aria-labelledby="menu-item-5">
+                    <ul class="list-unstyled">
+                        
+                        <li>
+                            <a href="#">cho vay</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </li>
+            
+            <li class="accordion-panel card">
+                <a class="collapsed single-item" href="#">liên hệ</a>
+            </li>
+        </ul>
+        <p class="m-0">
+            Hotline: <span class="mb-hotline">1800 59 9999 - (84.4) 3944 5566</span>
+        </p>
+        <hr>
+        <div class="footerComponent p-0 text-xs-center">
+            <div class="ft-social">
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="#" class="circle">
+                            <img src="assets/images/icon_twitter.png" alt="">
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="circle">
+                            <img src="assets/images/icon_facebook.png" alt="">
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="circle">
+                            <img src="assets/images/icon_linkedin.png" alt="">
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="circle">
+                            <img src="assets/images/icon_youtube.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <p style="font-size: 13px;">
+                    © Bản quyền thuộc về Ngân hàng Maritime Bank. <br> Tất cả các quyền được bảo hộ.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+    
+<div class="header hidden-md-down">
     <div class="container">
         <div class="row">
             <div class="col-md-2">
@@ -225,11 +443,10 @@
         </div>
     </div>
 </div>
-
-    <div class="container" role="main" style="position: relative;">
+    <div class="container mm-slideout" role="main" style="position: relative;">
         
 
-<div class="signUp-container ui sticky">
+<div class="signUp-container ui sticky hidden-md-down">
     <div class="">
         <a href="#">
             <img src="assets/images/icon_user_sign_in.png" alt="">
@@ -237,6 +454,7 @@
         </a>
     </div>
 </div> 
+        
 
 <div class="breadcrum">
     <div class="row">
@@ -954,6 +1172,7 @@ Khuyến mại không được áp dụng khi Chủ Thẻ chọn chức năng �
     </div>
   </div>
 </div> 
+        
 <div class="gototop-container">
     <div class="">
         <a href="javascript:gototop()">
@@ -993,7 +1212,8 @@ Khuyến mại không được áp dụng khi Chủ Thẻ chọn chức năng �
         </div>
     </div>
 </div> 
-<div class="container footerComponent">
+    
+<div class="container footerComponent hidden-md-down">
     <div class="row">
         <div class="col-md-12">
             <div class="wrap-footer">
@@ -1004,9 +1224,7 @@ Khuyến mại không được áp dụng khi Chủ Thẻ chọn chức năng �
                         </h2>
                         <p style="font-size: 15px; margin: 0">Để được hỗ trợ thông tin chi tiết:</p>
                         <p style="font-size: 15px; color: #ec1d23; font-weight: bold;  margin: 0">
-                            support@msb.com <br>
-                            1800 59 9999 (miễn phí) <br>
-                            (84.4) 3944 5566
+                            support@msb.com <br> 1800 59 9999 (miễn phí) <br> (84.4) 3944 5566
                         </p>
                         <div class="ft-social">
                             <ul class="list-inline">
@@ -1118,12 +1336,175 @@ Khuyến mại không được áp dụng khi Chủ Thẻ chọn chức năng �
         </div>
         <div class="col-md-12 col-lg-4 col-xs-12 text-xs-left text-lg-right">
             <a href="#">Điều khoản sử dụng</a>
-               <span class="separate">|</span>   
+            <span class="separate">|</span>
             <a href="#">An toàn và bảo mật</a>
         </div>
     </div>
 </div>
+<div class="container footerMobileComponent hidden-lg-up">
+    <div class="row">
+        <div class="col-xs-12">
+            <ul class="list-unstyled" id="accordionMenuMobileFooter" role="tablist" aria-multiselectable="true">
+                
+                <li class="accordion-panel card">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionMenuMobileFooter" href="#menu-item-1footer" aria-controls="menu-item-1footer">
+                    khám phá cuộc sống
+                </a>
+                    <div id="menu-item-1footer" class="panel-collapse collapse sub-menu" role="tabpanel" aria-labelledby="menu-item-1footer">
+                        <ul class="list-unstyled">
+                            
+                            <li>
+                                <a href="#">Du lịch</a>
+                            </li>
+                            
+                            <li>
+                                <a href="#">giải trí</a>
+                            </li>
+                            
+                            <li>
+                                <a href="#">khoa học</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </li>
+                
+                <li class="accordion-panel card">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionMenuMobileFooter" href="#menu-item-2footer" aria-controls="menu-item-2footer">
+                    Tận hưởng cuộc sống
+                </a>
+                    <div id="menu-item-2footer" class="panel-collapse collapse sub-menu" role="tabpanel" aria-labelledby="menu-item-2footer">
+                        <ul class="list-unstyled">
+                            
+                            <li>
+                                <a href="#">mua sắm</a>
+                            </li>
+                            
+                            <li>
+                                <a href="#">ăn uống</a>
+                            </li>
+                            
+                            <li>
+                                <a href="#">giải trí</a>
+                            </li>
+                            
+                            <li>
+                                <a href="#">Chăm sóc sức khỏe</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </li>
+                
+                <li class="accordion-panel card">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionMenuMobileFooter" href="#menu-item-3footer" aria-controls="menu-item-3footer">
+                    an tâm vui sống
+                </a>
+                    <div id="menu-item-3footer" class="panel-collapse collapse sub-menu" role="tabpanel" aria-labelledby="menu-item-3footer">
+                        <ul class="list-unstyled">
+                            
+                            <li>
+                                <a href="#">mua sắm</a>
+                            </li>
+                            
+                            <li>
+                                <a href="#">ăn uống</a>
+                            </li>
+                            
+                            <li>
+                                <a href="#">bảo hiểm</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </li>
+                
+                <li class="accordion-panel card">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionMenuMobileFooter" href="#menu-item-4footer" aria-controls="menu-item-4footer">
+                    nâng tầm cuộc sống
+                </a>
+                    <div id="menu-item-4footer" class="panel-collapse collapse sub-menu" role="tabpanel" aria-labelledby="menu-item-4footer">
+                        <ul class="list-unstyled">
+                            
+                            <li>
+                                <a href="#">Cho vay</a>
+                            </li>
+                            
+                            <li>
+                                <a href="#">vay tiêu dùng</a>
+                            </li>
+                            
+                            <li>
+                                <a href="#">giải trí</a>
+                            </li>
+                            
+                            <li>
+                                <a href="#">chăm sóc sức khỏe</a>
+                            </li>
+                            
+                            <li>
+                                <a href="#">mua sắm</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </li>
+                
+                <li class="accordion-panel card">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionMenuMobileFooter" href="#menu-item-5footer" aria-controls="menu-item-5footer">
+                    đầu tư tương lai
+                </a>
+                    <div id="menu-item-5footer" class="panel-collapse collapse sub-menu" role="tabpanel" aria-labelledby="menu-item-5footer">
+                        <ul class="list-unstyled">
+                            
+                            <li>
+                                <a href="#">cho vay</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </li>
+                
+            </ul>
+            <p class="text-xs-center" style="font-size: 12px; margin: 0">Để được hỗ trợ thông tin chi tiết: <span style="font-size: 12px; color: #ec1d23; font-weight: bold;">support@msb.com</span></p>
+            <p class="text-xs-center" style="font-size: 12px; color: #ec1d23; font-weight: bold;  margin: 0">
+                1800 59 9999 (miễn phí) - (84.4) 3944 5566
+            </p>
+            <div class="footerComponent p-0">
+                <div class="ft-social text-xs-center">
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="#" class="circle">
+                                <img src="assets/images/icon_twitter.png" alt="">
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="circle">
+                                <img src="assets/images/icon_facebook.png" alt="">
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="circle">
+                                <img src="assets/images/icon_linkedin.png" alt="">
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="circle">
+                                <img src="assets/images/icon_youtube.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bottomFooter  text-xs-center">
+                    <a href="#">Điều khoản sử dụng</a>
+                    <span class="separate">|</span>
+                    <a href="#">An toàn và bảo mật</a>
+                </div>
+            </div>
 
+        </div>
+    </div>
+</div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/tether.min.js"></script>
@@ -1133,6 +1514,7 @@ Khuyến mại không được áp dụng khi Chủ Thẻ chọn chức năng �
     <script src="assets/js/sticky.min.js"></script>
     <script src="assets/js/jquery.matchheight.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/mobile.js"></script>
      
     <script src="assets/js/rating.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
