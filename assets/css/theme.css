@@ -806,7 +806,7 @@ h2.small-title {
 .subscription-container {
   margin-top: 80px;
   background: url(../images/bg-subscriptions.jpg) no-repeat;
-  background-size: 100%; }
+  background-size: cover; }
   .subscription-container .subscription {
     background: rgba(242, 0, 0, 0.5);
     padding-top: 20px;

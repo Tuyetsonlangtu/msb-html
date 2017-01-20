@@ -621,10 +621,86 @@
                 </div>
             </div>
             <span class="owlControl-banner-slide slide-carousel">
-        <a href="javascript:;" class="owlTobanner prev">prev</a>
-        <a href="javascript:;" class="owlTobanner next">Next</a>
-      </span>
+                <a href="javascript:;" class="owlTobanner prev">prev</a>
+                <a href="javascript:;" class="owlTobanner next">Next</a>
+            </span>
         </div>
+        <!--banner on mobile-->
+        <div class="homepage-banner-on-mobile hidden-lg-up">
+            <div class="space-30"></div>
+            <div class="first-item">
+                <div class="ad-container">
+                    <div class="banner-item">
+                        <div class="banner-content">
+                            <div class="content position-absolute">
+                                <h3 class="banner-category">Nổi bật</h3>
+                                <h2 class="m-0 banner-title">iPhone 7, 7 Plus giá trong tầm tay <br> </h2>
+                                <p>Giảm ngay 15% khi mua tại Hnam Mobile với thẻ MSB</p>
+                                <a class="banner-link" href="#">Xem chi tiết</a>
+                            </div>
+                            <img src="imageDemo/1.jpg" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-banner-container">
+                <div class="row mobile-carousel">
+                    <div class="ad-container">
+                        <div class="banner-item">
+                            <div class="banner-content">
+                                <div class="content position-absolute">
+                                    <h3 class="banner-category">Nổi bật</h3>
+                                    <h2 class="m-0 banner-title">iPhone 7, 7 Plus giá trong tầm tay <br> </h2>
+                                    <p>Giảm ngay 15% khi mua tại Hnam Mobile với thẻ MSB</p>
+                                    <a class="banner-link" href="#">Xem chi tiết</a>
+                                </div>
+                                <img src="imageDemo/1.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ad-container">
+                        <div class="banner-item">
+                            <div class="banner-content">
+                                <div class="content position-absolute">
+                                    <h3 class="banner-category">Nổi bật</h3>
+                                    <h2 class="m-0 banner-title">iPhone 7, 7 Plus giá trong tầm tay <br> </h2>
+                                    <p>Giảm ngay 15% khi mua tại Hnam Mobile với thẻ MSB</p>
+                                    <a class="banner-link" href="#">Xem chi tiết</a>
+                                </div>
+                                <img src="imageDemo/1.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ad-container">
+                        <div class="banner-item">
+                            <div class="banner-content">
+                                <div class="content position-absolute">
+                                    <h3 class="banner-category">Nổi bật</h3>
+                                    <h2 class="m-0 banner-title">iPhone 7, 7 Plus giá trong tầm tay <br> </h2>
+                                    <p>Giảm ngay 15% khi mua tại Hnam Mobile với thẻ MSB</p>
+                                    <a class="banner-link" href="#">Xem chi tiết</a>
+                                </div>
+                                <img src="imageDemo/1.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ad-container">
+                        <div class="banner-item">
+                            <div class="banner-content">
+                                <div class="content position-absolute">
+                                    <h3 class="banner-category">Nổi bật</h3>
+                                    <h2 class="m-0 banner-title">iPhone 7, 7 Plus giá trong tầm tay <br> </h2>
+                                    <p>Giảm ngay 15% khi mua tại Hnam Mobile với thẻ MSB</p>
+                                    <a class="banner-link" href="#">Xem chi tiết</a>
+                                </div>
+                                <img src="imageDemo/1.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end banner mobile-->
     </div>
 </div>
 <div class="space-60"></div>
@@ -1036,7 +1112,7 @@
         <h2 class="big-title text-xs-center">
             KHUYẾN MÃI ĐẶC BIỆT TỪ MARITIME BANK
         </h2>
-        <div class="home-page-banner">
+        <div class="home-page-banner tw2-mb-banner">
             <div class="ad-container">
                 <div class="banner-item">
                     <div class="banner-content">
@@ -1423,21 +1499,13 @@
             var owl = $(".slide-carousel");
             owl.each(function() {
                 var carousel = $(this).find('.owl-carousel-container');
-
+                var _this = $(this);
                 carousel.owlCarousel({
-                    itemsCustom: [
-                        [0, 1],
-                        [450, 1],
-                        [600, 1],
-                        [700, 2],
-                        [1000, 3],
-                        [1200, 3],
-                        [1400, 3],
-                        [1600, 3]
-                    ],
+                   itemsScaleUp:true,
                     //navigation: true,
                     afterInit: function(el) {
-
+                        var pr = _this.find('.product-content');
+                        equalHeight(pr);
                     }
                 });
 
@@ -1455,6 +1523,14 @@
             var bannerHomeCarousel = $('.owl-carousel-banner-container .owl-carousel');
             bannerHomeCarousel.owlCarousel({
                 singleItem: true,
+                //navigation: true,
+                afterInit: function(el) {}
+            });
+
+            var bannerMobileHomeCarousel = $('.owl-carousel-banner-container .mobile-carousel');
+            bannerMobileHomeCarousel.owlCarousel({
+                 items : 1,
+                    itemsScaleUp:true,
                 //navigation: true,
                 afterInit: function(el) {}
             });

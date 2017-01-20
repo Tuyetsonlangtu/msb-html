@@ -237,4 +237,46 @@ html.mm-opening {
         border: 0;
         padding-bottom: 0 !important; }
 
+.tw2-mb-banner .ad-container {
+  display: block; }
+.tw2-mb-banner .banner-item img {
+  max-width: 100%; }
+
+@media (min-width: 992px) {
+  .filter-container .btn-filter-on-mobile {
+    display: none; } }
+.filter-container .headerTextFilterMobile {
+  background: #f20000;
+  color: #fff;
+  font-size: 15px;
+  margin: -15px -15px 15px;
+  padding: 15px; }
+  @media (min-width: 992px) {
+    .filter-container .headerTextFilterMobile {
+      display: none; } }
+  .filter-container .headerTextFilterMobile .btnclose img {
+    width: 15px; }
+@media (max-width: 1199px) {
+  .filter-container {
+    padding-right: 0;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.47);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 999;
+    padding: 30px 30px;
+    display: none; }
+    .filter-container.active {
+      display: block; }
+    .filter-container #accordion {
+      background: #fff;
+      padding: 15px;
+      height: 100%;
+      overflow: auto;
+      margin: 0; }
+      .filter-container #accordion .accordion-panel {
+        padding-bottom: 17px; } }
+
 /*# sourceMappingURL=mobile.css.map */

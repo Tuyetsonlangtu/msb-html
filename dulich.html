@@ -453,8 +453,7 @@
         </a>
     </div>
 </div> 
-        
-
+         
 <div class="breadcrum">
     <div class="row">
         <div class="col-xs-12">
@@ -474,57 +473,76 @@
 </div>
 <div class="space-30"></div>
 <div class="row">
+    <div class="col-xs-12 col-lg-8 offset-lg-4">
+        <h2 class="big-title text-xs-center text-uppercase">
+            Du lịch
+        </h2>
+    </div>
+</div>
+<div class="row">
     <!--filter-->
-    <div class="col-md-4 col-xs-12">
-        <div class="filter-container">
+    <div class="col-lg-4 col-xs-12">
+        <div class="space-10 hidden-lg-up"></div>
+<button class="clearfixhidden-lg-up btn btn btn-primary btn-block mb-2 border-radius-0 text-xs-left" onclick="toggleMobileFilter()">
+    Bộ lọc nâng cao
+    <img src="assets/images/icon-plus-white.png" alt="" style="margin-top: 5px;" class="float-xs-right">
+</button>
+
+<div class="filter-container">
     <ul class="list-unstyled" id="accordion" role="tablist" aria-multiselectable="true">
+        <li class="headerTextFilterMobile">
+            Lọc nâng cao
+            <a href="javascript:;" onclick="toggleMobileFilter()" class="float-xs-right btnclose">
+                <img src="assets/images/icon-close-white.png" alt="">
+            </a>
+        </li>
         <li class="accordion-panel">
             <a class="headFilterText" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 Tỉnh thành
             </a>
             <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne" class="collapse in">
                 <ul class="list-unstyled">
-                
-                    <li>    
+                    
+                    <li>
                         <label class="custom-control custom-checkbox">
     <input type="checkbox" class="custom-control-input">
     <span class="custom-control-indicator"></span>
     <span class="custom-control-description">Hồ Chí Minh (82)</span>
 </label>
                     </li>
-                
-                    <li>    
+                    
+                    <li>
                         <label class="custom-control custom-checkbox">
     <input type="checkbox" class="custom-control-input">
     <span class="custom-control-indicator"></span>
     <span class="custom-control-description">Hà Nội (36)</span>
 </label>
                     </li>
-                
-                    <li>    
+                    
+                    <li>
                         <label class="custom-control custom-checkbox">
     <input type="checkbox" class="custom-control-input">
     <span class="custom-control-indicator"></span>
     <span class="custom-control-description">Đà Nẵng (68)</span>
 </label>
                     </li>
-                
-                    <li>    
+                    
+                    <li>
                         <label class="custom-control custom-checkbox">
     <input type="checkbox" class="custom-control-input">
     <span class="custom-control-indicator"></span>
     <span class="custom-control-description">Cần Thơ (40)</span>
 </label>
                     </li>
-                
-                    <li>    
+                    
+                    <li>
                         <label class="custom-control custom-checkbox">
     <input type="checkbox" class="custom-control-input">
     <span class="custom-control-indicator"></span>
     <span class="custom-control-description">Tỉnh thành khác (12)</span>
 </label>
                     </li>
-                
+                    
                 </ul>
             </div>
         </li>
@@ -532,89 +550,89 @@
             <a class="headFilterText" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 Sở thích
             </a>
-            <div id="collapseTwo"  role="tabpanel" aria-labelledby="headingTwo" class="collapse in">
+            <div id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo" class="collapse in">
                 <ul class="list-unstyled">
-                
-                    <li>    
+                    
+                    <li>
                         <label class="custom-control custom-checkbox">
     <input type="checkbox" class="custom-control-input">
     <span class="custom-control-indicator"></span>
     <span class="custom-control-description">Biển (82)</span>
 </label>
                     </li>
-                
-                    <li>    
+                    
+                    <li>
                         <label class="custom-control custom-checkbox">
     <input type="checkbox" class="custom-control-input">
     <span class="custom-control-indicator"></span>
     <span class="custom-control-description">Cao nguyên (36)</span>
 </label>
                     </li>
-                
-                    <li>    
+                    
+                    <li>
                         <label class="custom-control custom-checkbox">
     <input type="checkbox" class="custom-control-input">
     <span class="custom-control-indicator"></span>
     <span class="custom-control-description">Rừng (68)</span>
 </label>
                     </li>
-                
-                    <li>    
+                    
+                    <li>
                         <label class="custom-control custom-checkbox">
     <input type="checkbox" class="custom-control-input">
     <span class="custom-control-indicator"></span>
     <span class="custom-control-description">Hoạt động ngoài trời và mạo hiểm (40)</span>
 </label>
                     </li>
-                
-                    <li>    
+                    
+                    <li>
                         <label class="custom-control custom-checkbox">
     <input type="checkbox" class="custom-control-input">
     <span class="custom-control-indicator"></span>
     <span class="custom-control-description">Hoạt động gia đình (8)</span>
 </label>
                     </li>
-                
-                    <li>    
+                    
+                    <li>
                         <label class="custom-control custom-checkbox">
     <input type="checkbox" class="custom-control-input">
     <span class="custom-control-indicator"></span>
     <span class="custom-control-description">Nghỉ dưỡng (30)</span>
 </label>
                     </li>
-                
-                    <li>    
+                    
+                    <li>
                         <label class="custom-control custom-checkbox">
     <input type="checkbox" class="custom-control-input">
     <span class="custom-control-indicator"></span>
     <span class="custom-control-description">Khám phá</span>
 </label>
                     </li>
-                
-                    <li>    
+                    
+                    <li>
                         <label class="custom-control custom-checkbox">
     <input type="checkbox" class="custom-control-input">
     <span class="custom-control-indicator"></span>
     <span class="custom-control-description">Lãng mạn (10)</span>
 </label>
                     </li>
-                
-                    <li>    
+                    
+                    <li>
                         <label class="custom-control custom-checkbox">
     <input type="checkbox" class="custom-control-input">
     <span class="custom-control-indicator"></span>
     <span class="custom-control-description">Sang trọng (22)</span>
 </label>
                     </li>
-                
-                    <li>    
+                    
+                    <li>
                         <label class="custom-control custom-checkbox">
     <input type="checkbox" class="custom-control-input">
     <span class="custom-control-indicator"></span>
     <span class="custom-control-description">Tiết kiệm (13)</span>
 </label>
                     </li>
-                
+                    
                 </ul>
             </div>
         </li>
@@ -622,26 +640,26 @@
             <a class="headFilterText" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 Giá tiền
             </a>
-            <div id="collapseThree"  role="tabpanel" aria-labelledby="headingThree" class="collapse in">
-               <input type="text" id="sliderValue" value="" data-slider-min="10" data-slider-max="100000" data-slider-step="1" data-slider-value="[12500,77500]">
-               <div class="space-10"></div>
-               <div class="display-value-container">
-                   <div class="row">
-                       <div class="col-xs-6">
-                           <span class="display-value v1"></span> VND
-                       </div>
-                       <div class="col-xs-6">
-                           <span class="display-value v2"></span> VND
-                       </div>
-                   </div>
-               </div>
+            <div id="collapseThree" role="tabpanel" aria-labelledby="headingThree" class="collapse in">
+                <input type="text" id="sliderValue" value="" data-slider-min="10" data-slider-max="100000" data-slider-step="1" data-slider-value="[12500,77500]">
+                <div class="space-10"></div>
+                <div class="display-value-container">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <span class="display-value v1"></span> VND
+                        </div>
+                        <div class="col-xs-6">
+                            <span class="display-value v2"></span> VND
+                        </div>
+                    </div>
+                </div>
             </div>
         </li>
         <li class="accordion-panel">
             <a class="headFilterText" data-toggle="collapse" data-parent="#accordion" href="#headingFour" aria-expanded="false" aria-controls="collapseThree">
                 Đánh giá
             </a>
-            <div id="headingFour"  role="tabpanel" aria-labelledby="headingFour" class="collapse in">
+            <div id="headingFour" role="tabpanel" aria-labelledby="headingFour" class="collapse in">
                 <span class="form-evaluation-star">
                     <input type="radio" name="example" class="rating" value="1" />
                     <input type="radio" name="example" class="rating" value="2" />
@@ -651,21 +669,18 @@
                 </span>
             </div>
         </li>
+        <li class="btn-filter-on-mobile">
+            <button class="btn btn-primary font-weight-bold btn-block">TÌM KIẾM</button>
+        </li>
     </ul>
-</div>    
+</div>
     </div>
-    <div class="col-xs-12 col-md-8">
-        <div class="row">
-            <div class="col-xs-12">
-                <h2 class="big-title text-xs-center text-uppercase">
-                    Du lịch
-                </h2>
-            </div>
-        </div>
+    <div class="col-xs-12 col-lg-8">
+
         <div class="space-10"></div>
         <div class="row">
             <div class="col-xs-12 text-xs-left text-sm-right">
-                Sắp xếp theo 
+                Sắp xếp theo
                 <select class="selectpicker" data-style="btn-secondary sl-custom-theme" data-width="200">
                     <option value="1">Mới nhất</option>
                     <option value="1">Cũ nhất</option>
@@ -675,14 +690,14 @@
         <div class="space-10"></div>
         <div class="row">
             <div class="col-xs-12">
-                <h2 class="small-title">
+                <h2 class="small-title text-xs-center text-lg-left">
                     ƯU ĐÃI NỔI BẬT
                 </h2>
             </div>
         </div>
         <div class="row product-list">
             
-            <div class="col-md-12 col-lg-6 col-xs-12">
+            <div class="col-md-6 col-lg-6 col-xs-12">
                 <div class="block-product">
     <div class="product-content">
         <a href="#" class="img-content-link">
@@ -712,7 +727,7 @@
 </div>
             </div>
             
-            <div class="col-md-12 col-lg-6 col-xs-12">
+            <div class="col-md-6 col-lg-6 col-xs-12">
                 <div class="block-product">
     <div class="product-content">
         <a href="#" class="img-content-link">
@@ -742,7 +757,7 @@
 </div>
             </div>
             
-            <div class="col-md-12 col-lg-6 col-xs-12">
+            <div class="col-md-6 col-lg-6 col-xs-12">
                 <div class="block-product">
     <div class="product-content">
         <a href="#" class="img-content-link">
@@ -771,9 +786,8 @@
     </p>
 </div>
             </div>
-            
-            
-            <div class="col-md-12 col-lg-6 col-xs-12">
+             
+            <div class="col-md-6 col-lg-6 col-xs-12">
                 <div class="block-product">
     <div class="product-content">
         <a href="#" class="img-content-link">
@@ -803,7 +817,7 @@
 </div>
             </div>
             
-            <div class="col-md-12 col-lg-6 col-xs-12">
+            <div class="col-md-6 col-lg-6 col-xs-12">
                 <div class="block-product">
     <div class="product-content">
         <a href="#" class="img-content-link">
@@ -833,7 +847,7 @@
 </div>
             </div>
             
-            <div class="col-md-12 col-lg-6 col-xs-12">
+            <div class="col-md-6 col-lg-6 col-xs-12">
                 <div class="block-product">
     <div class="product-content">
         <a href="#" class="img-content-link">
@@ -874,8 +888,7 @@
                             <div class="banner-content">
                                 <div class="content position-absolute">
                                     <h3 class="banner-category">
-                                        KHUYẾN MÃI ĐẶC BIỆT <br>
-                                        TỪ MARITIME BANK
+                                        KHUYẾN MÃI ĐẶC BIỆT <br> TỪ MARITIME BANK
                                     </h3>
                                     <div class="space-20"></div>
                                     <h2 class="m-0 banner-title">
@@ -884,7 +897,7 @@
                                     <div class="space-20"></div>
                                     <a class="banner-link" href="#">Xem chi tiết</a>
                                 </div>
-                                <img src="imageDemo/banner.jpg" alt="">
+                                <img src="imageDemo/banner.jpg" class="img-fluid" alt="">
                             </div>
                         </div>
                     </div>
@@ -901,7 +914,7 @@
         </div>
         <div class="row product-list">
             
-            <div class="col-md-12 col-lg-6 col-xs-12">
+            <div class="col-md-6 col-lg-6 col-xs-12">
                 <div class="block-product">
     <div class="product-content">
         <a href="#" class="img-content-link">
@@ -931,7 +944,7 @@
 </div>
             </div>
             
-            <div class="col-md-12 col-lg-6 col-xs-12">
+            <div class="col-md-6 col-lg-6 col-xs-12">
                 <div class="block-product">
     <div class="product-content">
         <a href="#" class="img-content-link">
@@ -961,7 +974,7 @@
 </div>
             </div>
             
-            <div class="col-md-12 col-lg-6 col-xs-12">
+            <div class="col-md-6 col-lg-6 col-xs-12">
                 <div class="block-product">
     <div class="product-content">
         <a href="#" class="img-content-link">
@@ -990,9 +1003,8 @@
     </p>
 </div>
             </div>
-            
-            
-            <div class="col-md-12 col-lg-6 col-xs-12">
+             
+            <div class="col-md-6 col-lg-6 col-xs-12">
                 <div class="block-product">
     <div class="product-content">
         <a href="#" class="img-content-link">
@@ -1022,7 +1034,7 @@
 </div>
             </div>
             
-            <div class="col-md-12 col-lg-6 col-xs-12">
+            <div class="col-md-6 col-lg-6 col-xs-12">
                 <div class="block-product">
     <div class="product-content">
         <a href="#" class="img-content-link">
@@ -1052,7 +1064,7 @@
 </div>
             </div>
             
-            <div class="col-md-12 col-lg-6 col-xs-12">
+            <div class="col-md-6 col-lg-6 col-xs-12">
                 <div class="block-product">
     <div class="product-content">
         <a href="#" class="img-content-link">
@@ -1110,7 +1122,7 @@
 <div class="space-60"></div>
 <div class="row">
     <div class="col-md-12">
-        <div class="home-page-banner m-0">
+        <div class="home-page-banner m-0 tw2-mb-banner">
             <div class="ad-container">
                 
                 <div class="banner-item">
@@ -1144,15 +1156,15 @@
 <div class="space-60"></div>
 <div class="row">
     <div class="col-xs-12">
-         <h2 class="big-title text-xs-center">
+        <h2 class="big-title text-xs-center">
             ƯU ĐÃI KHÔNG THỂ BỎ LỠ
         </h2>
-         <div class="space-30"></div>
+        <div class="space-30"></div>
     </div>
     <div class="col-xs-12">
         <div class="row">
             
-            <div class="col-md-6 col-xs-12">
+            <div class="col-md-12 col-xs-12">
                 <div class="fav2-container">
     <img src="imageDemo/bgfv2-1.jpg" class="img-fluid" alt="">
     <div class="space-20"></div>
@@ -1180,7 +1192,7 @@
 </div>
             </div>
             
-            <div class="col-md-6 col-xs-12">
+            <div class="col-md-12 col-xs-12">
                 <div class="fav2-container">
     <img src="imageDemo/bgfv2-2.jpg" class="img-fluid" alt="">
     <div class="space-20"></div>

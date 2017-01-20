@@ -13,3 +13,12 @@ function toggleMenuMobile() {
     } else
         $('html').addClass("mm-opening");
 }
+
+function toggleMobileFilter() {
+    var filter = $('.filter-container');
+    if (filter.hasClass('active')) {
+        filter.removeClass('active')
+    } else {
+        filter.addClass('active');
+    }
+}
