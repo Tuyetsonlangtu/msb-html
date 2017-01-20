@@ -286,4 +286,15 @@ html.mm-opening {
     .slide-thumbnail .owlControl {
       display: none; } }
 
+@media (max-width: 991px) {
+  .container-on-mobile {
+    white-space: nowrap;
+    overflow-x: auto; }
+    .container-on-mobile .block-product {
+      display: inline-block;
+      max-width: 350px;
+      margin-right: 15px; }
+      .container-on-mobile .block-product * {
+        white-space: initial; } }
+
 /*# sourceMappingURL=mobile.css.map */
