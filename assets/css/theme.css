@@ -359,7 +359,7 @@ h2.small-title {
     background: #f20000; }
   @media (max-width: 767px) {
     .custom-tabs .nav-item .nav-link {
-      font-size: 12px; } }
+      font-size: 18px; } }
 
 .aLink-read-more {
   display: inline-block;
@@ -883,10 +883,6 @@ h2.small-title {
     font-weight: bold;
     color: #fff;
     width: 122px; }
-    @media (max-width: 991px) {
-      .favorable-container .favorable-title {
-        font-size: 15px;
-        line-height: 1.2; } }
   .favorable-container .favorable-link {
     font-size: 13px;
     font-weight: bold;

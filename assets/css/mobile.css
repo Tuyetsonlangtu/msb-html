@@ -237,10 +237,11 @@ html.mm-opening {
         border: 0;
         padding-bottom: 0 !important; }
 
-.tw2-mb-banner .ad-container {
-  display: block; }
-.tw2-mb-banner .banner-item img {
-  max-width: 100%; }
+@media (max-width: 991px) {
+  .tw2-mb-banner .ad-container {
+    display: block; }
+  .tw2-mb-banner .banner-item img {
+    max-width: 100%; } }
 
 @media (min-width: 992px) {
   .filter-container .btn-filter-on-mobile {
@@ -278,5 +279,11 @@ html.mm-opening {
       margin: 0; }
       .filter-container #accordion .accordion-panel {
         padding-bottom: 17px; } }
+
+@media (max-width: 1199px) {
+  .slide-thumbnail {
+    padding: 0; }
+    .slide-thumbnail .owlControl {
+      display: none; } }
 
 /*# sourceMappingURL=mobile.css.map */
