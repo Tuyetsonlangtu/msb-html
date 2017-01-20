@@ -28,14 +28,41 @@ $(function() {
     $('.dropdown-category-favor').on({
         "show.bs.dropdown": function() {
             $('.back-drop').addClass('active');
+            $('.mainCatMenuHead li > a').eq(0).trigger('mouseover');
         },
         "hide.bs.dropdown": function() {
             $('.back-drop').removeClass('active');
-        },
-        "shown.bs.dropdown": function() {
-            var favorite_category_block = $('.favorite-category-block');
-            equalHeight(favorite_category_block);
-        },
+            $('.mainCatMenuHead li > a').eq(0).trigger('mouseover');
+        }
+
+        //,
+        // "shown.bs.dropdown": function() {
+        //     var favorite_category_block = $('.favorite-category-block');
+        //     equalHeight(favorite_category_block);
+        // },
+    });
+
+    //hover menu on 'danh muc uu dai'
+    var menuHeadItem = $('.mainCatMenuHead li > a');
+    menuHeadItem.each(function() {
+        $(this).on('mouseover', function() {
+            if ($(this).hasClass('active')) {
+                return;
+            } else {
+                menuHeadItem.removeClass('active');
+                $(this).addClass('active');
+            }
+            $('.favorite-category-block-content.current').stop().fadeOut(function() {
+                $(this).removeClass('current');
+            });
+            let menu_block_id = $(this).data('target');
+            $(menu_block_id).stop().fadeIn(function() {
+                $(this).addClass('current');
+                var height = $(this).height();
+                $('.favorite-category-quick-link').animate({ height: (height - 20) + 'px' })
+            });
+
+        })
     })
 });
 
