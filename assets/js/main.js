@@ -19,11 +19,18 @@ $(function() {
         $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
     });
     $('.signUp-container').sticky({
-        offset: 40,
+        offset: 80,
         onUnstick: function() {
             $('.signUp-container').css('left', 'auto');
         }
     });
+
+    //header sticky
+    $('.header').sticky({
+        onStick: function() {
+            $('.header').height('auto')
+        }
+    })
 
     $('.dropdown-category-favor').on({
         "show.bs.dropdown": function() {

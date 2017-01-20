@@ -449,6 +449,17 @@ h2.small-title {
   background: #e7e7e7;
   padding-top: 14px;
   padding-bottom: 12px; }
+  .header .st-signIn {
+    display: none; }
+  .header.fixed {
+    position: fixed;
+    top: 0;
+    z-index: 9999; }
+    .header.fixed .st-logo,
+    .header.fixed .navigation-conponent {
+      display: none; }
+    .header.fixed .st-signIn {
+      display: block; }
 
 .search-and-category .btn-custom {
   background: #979797;
@@ -521,7 +532,8 @@ h2.small-title {
   background: #fff !important;
   border-top-color: #e7e7e7 !important;
   border-bottom-color: #e7e7e7 !important;
-  outline: none !important; }
+  outline: none !important;
+  height: 38px; }
   .search-and-category .btn-category.dropdown-toggle-custom:hover, .search-and-category .btn-category.dropdown-toggle-custom:focus {
     color: #f20000 !important; }
     .search-and-category .btn-category.dropdown-toggle-custom:hover:after, .search-and-category .btn-category.dropdown-toggle-custom:focus:after {
@@ -945,7 +957,7 @@ h2.small-title {
   width: 70px;
   text-align: center;
   line-height: 1.1;
-  top: 40px; }
+  top: 80px; }
   @media (max-width: 1300px) {
     .signUp-container {
       right: -30px; } }
