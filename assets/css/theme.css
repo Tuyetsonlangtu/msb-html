@@ -444,6 +444,39 @@ h2.small-title {
     border-right: 1px solid #e5e5e5;
     padding-right: 20px;
     display: inline-block; }
+  .top-header .dr-menu-sigIn {
+    min-width: 320px;
+    box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.21);
+    border: 0; }
+    .top-header .dr-menu-sigIn:before {
+      content: "";
+      width: 15px;
+      height: 12px;
+      background: url(../images/arrow-up-dr-menu-signIn.png) no-repeat;
+      position: absolute;
+      top: -12px;
+      right: 30px; }
+    .top-header .dr-menu-sigIn ul {
+      margin-bottom: 10px; }
+      .top-header .dr-menu-sigIn ul::after {
+        content: "";
+        display: table;
+        clear: both; }
+      .top-header .dr-menu-sigIn ul li {
+        margin-bottom: 10px; }
+    .top-header .dr-menu-sigIn .btn::after {
+      content: "";
+      display: table;
+      clear: both; }
+    .top-header .dr-menu-sigIn .btn .btn-text {
+      float: left;
+      font-weight: 600 !important; }
+    .top-header .dr-menu-sigIn .btn img {
+      float: right; }
+    .top-header .dr-menu-sigIn .btn.btn-facebook img {
+      margin-right: -5px; }
+    .top-header .dr-menu-sigIn .btn.btn-google-plus img {
+      margin-right: -5px; }
 
 .header {
   background: #e7e7e7;
@@ -1465,6 +1498,8 @@ h2.small-title {
   font-weight: 600; }
   .btn-facebook img {
     float: right; }
+  .btn-facebook:hover {
+    background: #1f335d; }
 
 .btn-google-plus {
   background: #de4839;
@@ -1472,6 +1507,8 @@ h2.small-title {
   color: #fff; }
   .btn-google-plus img {
     float: right; }
+  .btn-google-plus:hover {
+    background: #841b10; }
 
 @media (min-width: 768px) {
   .choose-your-favorite-item {
