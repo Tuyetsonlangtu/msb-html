@@ -456,6 +456,8 @@ h2.small-title {
       position: absolute;
       top: -12px;
       right: 30px; }
+    .top-header .dr-menu-sigIn.custom {
+      right: 30px; }
     .top-header .dr-menu-sigIn ul {
       margin-bottom: 10px; }
       .top-header .dr-menu-sigIn ul::after {
